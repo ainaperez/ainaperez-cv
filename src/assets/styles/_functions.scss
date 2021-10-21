@@ -4,7 +4,7 @@
 //the number of cards on each row. Used in projects section and
 //education section.
 
-@function cardDivider($numCards) {
+@function carddivider($numCards) {
   $widthCard: 90%/$numCards;
 
   @return $widthCard;
