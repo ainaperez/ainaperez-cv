@@ -1,11 +1,11 @@
 //functions
 
-//Function to define de width of each card depending on 
+//Function to define de width of each card depending on
 //the number of cards on each row. Used in projects section and
-//education section. 
+//education section.
 
-@function cardDivider($numCards){
-    $widthCard: 90%/$numCards;
-    @return $widthCard;
-  }
-  
+@function cardDivider($numCards) {
+  $widthCard: 90%/$numCards;
+
+  @return $widthCard;
+}

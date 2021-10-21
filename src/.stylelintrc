@@ -84,6 +84,7 @@
     "media-query-list-comma-newline-before": "always-multi-line",
     "at-rule-name-case": "lower",
     "at-rule-name-space-after": "always",
+    "at-rule-no-unknown": null,
     "at-rule-empty-line-before": [
       "always",
       {

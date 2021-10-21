@@ -10,6 +10,7 @@
 
 
 /* ----- General styles ----- */
+
 * {
   box-sizing: border-box;
   padding: 0; //restets paddings and margins from browsers
@@ -60,7 +61,6 @@ p {
     font-size: 4vw;
   }
 }
-
 @media (max-width: 425px) {
   p {
     font-size: 14px;
@@ -70,13 +70,13 @@ p {
 // -------Header------ */
 .header {
   width: 100%;
-  margin-top: 8.33%; 
+  margin-top: 8.33%;
 }
 
 .nav-ul {
   display: flex;
   justify-content: flex-end;
-  list-style: none; 
+  list-style: none;
 }
 
 .nav-li {
@@ -159,9 +159,7 @@ footer {
   }
 }
 
-
 // ----- Individual sections General styles ------ */
-
 .space {
   height: 150px;//div to create space between sections
 }
@@ -212,7 +210,6 @@ footer {
 //----- Individual sections specific styles ----- */
 
 // -----Front Page----- */
-
 .front-page {
   display: flex;
   flex-direction: column;
@@ -240,10 +237,9 @@ footer {
 }
 
 //----- Projects ----- */
-
-#projects{
-  .card{
-    width: cardDivider(3);
+#projects {
+  .card {
+    width: carddivider(3);
   }
 }
 
@@ -253,8 +249,8 @@ footer {
   padding-bottom: 10px;
   margin-top: 20px;
   color: $black;
-  text-decoration: none;
   text-align: center;
+  text-decoration: none;
   background-color: $red;
   border-radius: 5px;
 }
@@ -275,7 +271,7 @@ footer {
   .card {
     align-items: center;
     justify-content: center;
-    width: cardDivider(2);
+    width: carddivider(2);
     text-align: center;
   }
 }
@@ -314,25 +310,25 @@ footer {
     display: block;
   }
 
-  #skills{
+  #skills {
     width: 100%;
     margin-right: 0;
   }
 
-  #languages{
+  #languages {
     width: 100%;
     margin-left: 0;
   }
 }
 
 // ----- Contact ----- */
-
 .contact-graph {
   position: relative;
   z-index: 0;
   width: 50vw;
   margin: 0 auto;
 }
+
 .contact-links {
   align-self: space-around;
   margin-bottom: 70px;
@@ -365,7 +361,6 @@ footer {
 }
 
 @media (max-width: 769px) {
-
   #contact > .contact-mobile {
     margin-bottom: 70px;
   }
