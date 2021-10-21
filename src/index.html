@@ -1,23 +1,264 @@
-<!DOCTYPE html>
+<!doctype html>
 
-<html>
+<html lang="en">
+
   <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta type="author" content="Aina Perez Serra">
+    <meta type="description" content="Aina Perez Serra web developer curriculum CV">
+    <title>Aina Perez Curriculum</title>
+
   </head>
+
+
   <body>
-    <div class="uoc-container">
-      <img src="./assets/images/logo.png" alt="Universitat Oberta de Catalunya" class="uoc-logo">
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
-    <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+
+  <header class="header">
+
+    <nav>
+
+      <ul class="nav-ul">
+
+        <li class="nav-li"><a href="#projects">Projects</a></li>
+        <li class="nav-li"><a href="#employment">Employment</a></li>
+        <li class="nav-li"><a href="#skills">Skills & Languages</a></li>
+        <li class="nav-li"><a href="#contact">Contact</a></li>
+
+      </ul>
+      
+      <i class="burger">
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+      </i>
+      
+    </nav>
+    
+
+  </header>
+
+
+  <main>
+
+    <section class="front-page">
+
+      <h1>Aina Pérez Serra</h1>
+
+      <p>Creative Full Stack Web Developer
+          with a passion for logical problem solving 
+          and the building of user-friendly projects 
+          through clean and maintainable code.</p>
+
+      <p>Based in Berlin</p>
+      
+      <img class="circle-img" src="./assets/images/circle.svg" alt="barrowue graphic with circular shape">
+      
+      </section>
+      
+    <div class="space"></div>
+    
+    <section class="indiv-sect" id="projects">
+
+      <h2>Projects</h2>
+
+      <div class='flex-grid'>
+        <div class="card" data-aos="fade-up">
+          <h3>Formula 1 results viewer</h3>
+
+            <p>React Project, build from a template 
+              provided by my university, to view 
+              the results of Formula 1 races.</p>
+              
+            <p>Learned to work with fetch requests, 
+              APIs, asynchronous functions, 
+              DOM modification and basic Cypress testing.</p>
+
+            <a class="project-btn" 
+               href="https://github.com/ainaperez/formula1-results-viewer" 
+               target="blank">
+               Go to project</a>
+        </div>
+
+        <div class="card" data-aos="fade-up">
+
+          <h3>Random quote generator </h3>
+          
+            <p>A Webpage to view different random 
+              quotes built with React.</p>
+              
+            <p>Learned the React framework as well 
+              as Ajax requests and CSS modules.</p>
+
+            <a class="project-btn" 
+              href="https://github.com/ainaperez/Random-quote-machine" 
+              target="blank">
+              Go to project</a>
+
+        </div>
+
+        <div class="card" data-aos="fade-up">
+
+          <h3>Veggie Berlin blog</h3>
+        
+            <p>Mockup blog about vegetarian and vegan 
+              food in Berlin, built from scratch.</p>
+            
+            <p>Learned design, advanced HTML and CSS, 
+              npm packages, and performance analysis 
+              and improvement.  
+              Looking to improve it further with a framework 
+              and back-end</p>
+
+            <a class="project-btn" 
+            href="https://github.com/ainaperez/veggieberlin" 
+            target="blank">
+            Go to project</a>
+
+        </div>
+    </div>  
+
+    </section>
+
+    <div class="space"></div>
+
+    <section class="indiv-sect" id="employment">
+
+      <h2>Employment history</h2>
+
+        <div class="employ-section" data-aos="fade-left">
+
+          <h3>Saleswoman</h3>
+            
+            <p>2020-present</p> 
+            <p>Berlin, Germany</p>
+            <p>Woolworth Gmbh</p>
+
+        </div>
+
+        <div class="division"></div>
+
+        <div class="employ-section" data-aos="fade-left">
+          <h3>Marketing assistant</h3>
+          
+            <p>2018-2019</p> 
+            <p>Girona, Spain</p>
+            <p>Comunicacions i seguretat Serra</p>
+            <ul>
+              <li>Copywriting, translation, and 
+                re-design of their Website
+                <a>www.grupserra.com/en</a></li>
+                <li>Database tasks</li>
+            </ul>
+        </div>
+
+      </section>
+
+      <div class="space"></div>
+
+      <section class="indiv-sect" id="education">
+
+        <h2>Education</h2>
+
+        <div class="flex-grid">
+
+          <div class="card" data-aos="flip-up">
+            <h3>Master degree in Web and Web application development</h3>
+              
+              <p>2020-2021</p> 
+              <p>Berlin, Germany-Distant Learning</p>
+              <p>Open University of Catalonia (UOC)</p>
+          </div>
+
+          <div class="card" data-aos="flip-up">
+
+            <h3>Bachelor degree in Tourism</h3>
+
+              <p>2014-2018</p>
+              <p>Girona, Spain</p>
+              <p>University of Girona</p>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <div class="space"></div>
+
+      <section class="indiv-sect  flex-grid">
+
+      <div id="skills" data-aos="fade-up">
+        <h2>Skills</h2>
+
+          <ul>
+            <li>Front-end: HTML, CSS, Javascript, 
+              jQuery, Sass, BootStrap, React, Redux</li>
+            <li>Back-end: Drupal, Codeigniter, 
+              Laravel, Wordpress, mySQL</li>
+            <li>UI  & UX design: Optimal Workshop, Figma</li>
+          </ul>
+      </div>  
+      
+      <div class="vert-division"></div>
+
+      <div class="lang-space"></div>
+
+      <div id="languages" data-aos="fade-up">
+
+        <h2>Languages</h2>
+      
+        <ul>
+          <li>Catalan (native)</li>
+          <li>Spanish (native)</li>
+          <li>English (C1)</li>
+          <li>German (B2.2)</li>
+        </ul>
+      
+      </div>
+      </section>
+    
+      <div class="space"></div>
+
+      <section class="indiv-sect"  id="contact">
+
+        <h2 class="contact-mobile">Contact</h2>
+
+        <div class="flex-grid contact-links">
+          <div class="link-indiv" data-aos="flip-up">
+            <img class="social-icon" src="./assets/images/github.svg" alt="github icon">
+            <p class="contact-p"><a class="contact-a" href="https://github.com/ainaperez" target="blank">
+              /ainaperez</a></p>
+          </div>
+
+          <div class="link-indiv" data-aos="flip-up">
+            <img class="social-icon" src="assets/images/linkedin.svg" alt="linkedin icon">
+            <p class="contact-p"><a class="contact-a"  href="https://www.linkedin.com/in/ainaperezserra/" target="blank">
+              /ainaperezserra</a></p>
+          </div>
+        </div>
+
+          <img class="contact-graph" 
+               src="./assets/images/contact-graph.svg"
+               alt="barroque graphic with engraved style">
+
+      </section>
+
+  </main>   
+
+
+  <footer>
+
+    <p class="footer-p">Aina Perez Serra</p>
+
+  </footer>
+
+
+  <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>AOS.init();</script>
   </body>
 </html>
